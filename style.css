@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'VCR OSD Mono';
+	src: url('../fonts/VCR_OSD_MONO_1.001.ttf');
+}
+
+body {
+	font-family: 'VCR OSD Mono', serif !important;
+	color: white;
+	font-style: italic;
+}
+
+#center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+
+a {
+	color: white;
+	text-decoration:  none;
+}
+
+a:hover {
+	color: #CCCCCC !important;
+}
+
+.dropmenu ul,
+.dropmenu ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.dropmenu ul li {
+    position: relative
+}
+
+.dropmenu ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropmenu ul li a:hover {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dropmenu li ul {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 0px
+}
+
+.dropmenu ul li:hover ul {
+    display: inline-block
+    width: 100%;
+}
+
+.dropmenu ul ul,
+.dropmenu ul li:hover ul ul,
+.dropmenu ul ul li:hover ul ul {
+    display: none
+}
+
+.dropmenu ul li:hover ul,
+.dropmenu ul ul li:hover ul,
+.dropmenu ul ul ul li:hover ul {
+    display: block
+}
